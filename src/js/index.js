@@ -1,11 +1,11 @@
 import '../css/bootstrap.min.css'
-// import './bootstrap.min.js'
-// import 'swiper/css/swiper.min.css'
-// import 'swiper/js/swiper.min.js'
+import './bootstrap.min.js'
+import 'swiper/dist/css/swiper.min.css'
+import 'swiper/dist/js/swiper.min.js'
 import 'font-awesome/css/font-awesome.min.css'
 import '../less/base.less'
 import '../less/index.less'
-// import Swiper from 'swiper'
+import Swiper from 'swiper'
 
 $(function () {
     var bannerSwiper = new Swiper ('.banner .swiper-container', {
