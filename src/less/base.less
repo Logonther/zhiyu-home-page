@@ -1,0 +1,55 @@
+@import './var.less';
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+body {
+    color: @font-color;
+}
+a{
+    color: @font-color;
+    text-decoration: none !important;
+}
+/*reset*/
+.container{
+    width: 100%;
+    max-width: 1200px;
+    padding: 0;
+}
+.container-fluid{
+    padding: 0;
+}
+/*导航条*/
+.navbar{
+    border: none;
+    background: none;
+    margin: 0;
+    .navbar-header{
+        height: 80px;
+        .navbar-brand{
+            width: 183px;
+            height: 60px;
+            margin: 10px 0;
+            padding: 0;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .navbar-collapse{
+        border: none;
+        .navbar-nav{
+            a{
+                color: @font-color !important;
+                padding: 30px 44px;
+                height: 80px;
+                line-height: 20px;
+                font-size: 14px;
+            }
+        }
+    }
+}
