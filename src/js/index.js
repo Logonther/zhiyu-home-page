@@ -8,13 +8,10 @@ import '../less/main.less'
 import Swiper from '../../node_modules/swiper/dist/js/swiper.min.js'
 
 $(function () {
-    console.log("宽"+window.innerWidth+"高"+window.innerHeight);
     var solutionSwiper = new Swiper ('.solution .swiper-container', {
         speed: 700,
         loop: true,
         autoplay: {
-            delay: 3000,
-            stopOnLastSlide: false,
             disableOnInteraction: false,
         },
         pagination: {
@@ -34,7 +31,6 @@ $(function () {
         }
     })
     $('#fullpage').fullpage({
-        // scrollingSpeed: 700,
         sectionsColor: [/*第一屏*/'', /*第二屏*/'', /*第三屏*/'#F4F7F7', /*第四屏*/'',
             /*第五屏*/'#252C41', /*第六屏*/'', /*第七屏*/'#F0F2F5', /*第八屏*/'#148C9D', /*footer*/'#061D38'],
         controlArrows: false,//左右箭头
