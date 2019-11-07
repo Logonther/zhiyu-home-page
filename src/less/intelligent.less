@@ -1,0 +1,41 @@
+/*第四屏*/
+.intelligent{
+    >div{
+        display: inline-block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 100;
+        &.left{
+            width: 508*@vw;
+            .title{
+                line-height: 60*@vh;
+                font-size: 40*@vh;
+                margin: 205*@vh 0 0 60*@vw;
+                font-weight: 600;
+            }
+            .line{
+                margin: 32*@vh 0 0 62*@vw;
+                width: 80*@vw;
+                height: 6*@vh;
+                background-color: @fontColor;
+            }
+            .txt{
+                margin: 48*@vh 0 0 60*@vw;
+                font-size: 14*@vh;
+                line-height: 28*@vh;
+                width: 377*@vw;
+            }
+        }
+        &.right{
+            width: 932*@vw;
+            left: 508*@vw;
+            background-color: #29767D;
+            img{
+                margin: 141*@vh 0 0 50%;
+                transform: translateX(-50%);
+                height: 631*@vh;
+            }
+        }
+    }
+}

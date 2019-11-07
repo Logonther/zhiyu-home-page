@@ -1,0 +1,40 @@
+/*第五屏*/
+.platforms{
+    color: white;
+    .title{
+        text-align: center;
+        font-size: 32*@vh;
+        line-height: 45*@vh;
+        margin: 60*@vh 0 88*@vh;
+        font-weight: 600;
+    }
+    .content{
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        width: 1320*@vw;
+        .platform{
+            width: 200*@vw;
+            margin-right: 24*@vw;
+            float: left;
+            &:last-child{
+                margin-right: 0;
+            }
+            img{
+                width: 100%;
+            }
+            p{
+                text-align: center;
+                font-size: 16*@vh;
+                line-height: 22*@vh;
+                margin: 12*@vh auto 0;
+                width: 166*@vw;
+                &.name{
+                    font-size: 20*@vh;
+                    line-height: 28*@vh;
+                    margin-top: 20*@vh;
+                }
+            }
+        }
+    }
+}

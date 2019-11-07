@@ -31,7 +31,10 @@ module.exports = {
             options: {
                 postcss: [
                     require("autoprefixer")({
-                        browsers: ["last 5 versions"]
+                        overrideBrowserslist: [
+                            "> 1%",
+                            "last 2 versions"
+                        ]
                     })
                 ]
             }
@@ -77,7 +80,10 @@ module.exports = {
             },
             {
                 test: /\.(ttf|eot|svg|woff|woff2)$/,
-                use: ['url-loader']
+                loader: 'url-loader',
+                options: {
+                    name: 'font/[name].[ext]'
+                }
             }
         ]
     }

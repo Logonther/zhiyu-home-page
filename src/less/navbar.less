@@ -1,0 +1,66 @@
+/*导航条*/
+#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120*@vh;
+    background: transparent;
+    z-index: 101;
+    .navbar{
+        width: 100%;
+        height: 120*@vh;
+        border: none;
+        background: none;
+        margin: 0;
+        .navbar-header{
+            height: 120*@vh;
+            .navbar-toggle{
+                margin: 35*@vh 35*@vw 35@vh 0;
+                padding: 9*@vh 10*@vw;
+                .icon-bar{
+                    width: 22*@vw;
+                    height: 2*@vh;
+                }
+                .icon-bar+.icon-bar{
+                    margin-top: 4*@vh;
+                }
+            }
+            .navbar-brand{
+                width: 183*@vh;
+                height: 60*@vh;
+                margin: 30*@vh 60*@vw;
+                padding: 0;
+                background-size: auto 100%;
+                background-repeat: no-repeat;
+                background-image: url("../assets/logo/pic_logo_2.png");
+                transition: all .7s;
+                &.logo-black{
+                    background-image: url("../assets/logo/pic_logo.png");
+                    transition: all .7s;
+                }
+            }
+        }
+        .navbar-collapse{
+            border: none;
+            background: transparent;
+            .navbar-nav{
+                padding-right: 26*@vw;
+                li{
+                    >a{
+                        color: white;
+                        padding: 50*@vh 34*@vw;
+                        height: 120*@vh;
+                        line-height: 20*@vh;
+                        font-size: 14*@vh;
+                        transition: all .7s;
+                    }
+                    &.active>a{
+                        background-color: transparent;
+                    }
+                }
+
+            }
+        }
+    }
+}

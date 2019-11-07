@@ -1,0 +1,56 @@
+/*第三屏*/
+.solution{
+    text-align: center;
+    .title{
+        text-align: center;
+        font-size: 40*@vh;
+        line-height: 80*@vh;
+        margin: 10*@vh 0 32*@vh;
+        letter-spacing: 1*@vw;
+    }
+    .solution-pagination{
+        display: inline-block;
+        position: relative;
+        &::after{
+            content: "";
+            width: 100%;
+            height: 2*@vh;
+            background-color: rgba(21,37,66,0.2);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .swiper-pagination-bullet{
+            width: auto;
+            height: 50*@vh;
+            line-height: 50*@vh;
+            outline: none;
+            font-size: 16*@vh;
+            text-align: center;
+            border-bottom: 2*@vh solid transparent;
+            border-radius: 0;
+            margin-right: 80*@vw;
+            padding: 0 5*@vw;
+            background-color: transparent;
+            transition: all .7s;
+            &.swiper-pagination-bullet-active{
+                border-bottom: 2*@vh solid @fontColor;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+    .swiper-container{
+        width: 864*@vh;
+        height: 485*@vh;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        --swiper-themeColor: @themeColor;
+        box-shadow: 10*@vh 10*@vh 20*@vh #cccccc;
+        img{
+        }
+    }
+}

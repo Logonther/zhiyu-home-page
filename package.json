@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --open --port 2333 --contentBase src --hot --inline --watchContentBase",
-    "build": "webpack --progress --hide-modules",
+    "build": "webpack --watch",
     "start": "npm run dev"
   },
   "author": "",
@@ -20,6 +20,7 @@
     "exports-loader": "^0.7.0",
     "file-loader": "^4.2.0",
     "font-awesome": "^4.7.0",
+    "fullpage.js": "^2.9.7",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "image-webpack-loader": "^6.0.0",
@@ -33,7 +34,6 @@
     "resolve-url-loader": "^3.1.0",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
-    "swiper": "^4.5.1",
     "url-loader": "^2.2.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9",
@@ -45,6 +45,11 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-runtime": "^6.26.0",
-    "loader": "^2.1.1"
-  }
+    "loader": "^2.1.1",
+    "swiper": "^4.5.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }

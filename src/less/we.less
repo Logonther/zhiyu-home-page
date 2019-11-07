@@ -1,0 +1,74 @@
+/*第八屏*/
+.we{
+    .clients{
+        width: 578*@vw;
+        height: 467*@vh;
+        border: 6*@vh solid white;
+        margin-top: 17*@vh;
+        margin-left: 60*@vw;
+        padding: 7*@vh 7*@vw;
+        position: relative;
+        float: left;
+        .client{
+            padding: 20*@vh 20*@vw;
+            float: left;
+            width: 33.33333333%;
+            position: relative;
+            >img{
+                width: 144*@vw;
+                height: 84*@vh;
+            }
+        }
+        >img{
+            position: absolute;
+            bottom: -196*@vh;
+            right: -131*@vw;
+            height: 279*@vh;
+        }
+    }
+    .data{
+        float: left;
+        margin-left: 208*@vw;
+        .title{
+            font-size: 32*@vh;
+            line-height: 45*@vh;
+            margin-top: 58*@vh;
+            margin-bottom: 32*@vh;
+            color: white;
+            font-weight: 400;
+        }
+        .txt{
+            width: 427*@vw;
+            font-size: 14*@vh;
+            line-height: 26*@vh;
+            margin-bottom: 46*@vh;
+            color: white;
+            font-weight: 200;
+        }
+        .numbers{
+            width: 446*@vw;
+            overflow: hidden;
+            .item{
+                width: 223*@vw;
+                height: 160*@vh;
+                float: left;
+                .number{
+                    font-size: 48*@vh;
+                    line-height: 56*@vh;
+                    color: white;
+                    font-family: DINAlternate;
+                    margin-top: 33*@vh;
+                    font-weight: bold;
+                }
+                .name{
+                    font-size: 14*@vh;
+                    line-height: 20*@vh;
+                    color: white;
+                    font-family: DINAlternate;
+                    margin-top: 15*@vh;
+                    font-weight: 200;
+                }
+            }
+        }
+    }
+}

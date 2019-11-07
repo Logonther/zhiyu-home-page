@@ -1,0 +1,79 @@
+/*第七屏*/
+.allocations{
+    background-image: url("../assets/allocations/bg_pricelist.jpg");
+    background-size: 100% 610*@vh;
+    background-repeat: no-repeat;
+    .title{
+        text-align: center;
+        font-size: 32*@vh;
+        line-height: 45*@vh;
+        margin: 28*@vh 0 88*@vh;
+        color: white;
+        font-weight: 600;
+    }
+    .content{
+        position: relative;
+        margin: 0 auto;
+        width: 994*@vw;
+        .allocation{
+            float: left;
+            width: 387*@vw;
+            height: 520*@vh;
+            background-color: white;
+            overflow: hidden;
+            border-radius: 12*@vw;
+            box-shadow: 10*@vh 10*@vh 20*@vh rgba(0,0,0,0.12);
+            padding: 0 40*@vw;
+            &:first-child{
+                margin-right: 220*@vw;
+            }
+            >.name{
+                font-size: 24*@vh;
+                text-align: center;
+                margin: 43*@vh 0 30*@vh;
+                font-weight: 500;
+            }
+            .price{
+                color: #ffa700;
+                font-size: 24*@vh;
+                text-align: center;
+                margin-bottom: 50*@vh;
+                .number{
+                    font-size: 40*@vh;
+                }
+            }
+            .allocation-items{
+                .item{
+                    position: relative;
+                    margin-bottom: 48*@vh;
+                    .name{
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 20*@vh;
+                    }
+                    .icon{
+                        display: inline-block;
+                        vertical-align: middle;
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 24*@vh;
+                        height: 24*@vh;
+                        border-radius: 50%;
+                        line-height: 24*@vh;
+                        text-align: center;
+                        color: white;
+                        font-size: 12*@vh;
+                        &.yes{
+                            background-color: #39c38e;
+                        }
+                        &.no{
+                            background-color: #d5d5d5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

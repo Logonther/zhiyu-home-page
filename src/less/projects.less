@@ -1,0 +1,43 @@
+/*第六屏*/
+.projects{
+    position: relative;
+    .project{
+        width: 400*@vw;
+        margin-left: 30*@vw;
+        float: left;
+        &:nth-child(1){
+            margin: 37*@vh 0 0 60*@vw;
+        }
+        &:nth-child(2){
+            margin-top: 91*@vh;
+        }
+        &:nth-child(3){
+            margin-top: 0;
+        }
+        .pic{
+            width: 400*@vw;
+            height: 512*@vh;
+            position: relative;
+            overflow: hidden;
+            img{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+        p.number{
+            font-family: DINAlternate;
+            margin: 14*@vh 0 10*@vh;
+            font-size: 16*@vh;
+            line-height: 19*@vh;
+            font-weight: bold;
+        }
+        p.name{
+            margin: 0;
+            font-size: 16*@vh;
+            line-height: 22*@vh;
+            font-weight: 600;
+        }
+    }
+}
